@@ -16,7 +16,7 @@ const fotosData = [
     },
     {
         id: 3,
-        filename: 'WhatsApp Image 2026-05-18 at 16.17.08.jpeg',
+        filename: 'IMG-20260518-WA0023.jpg',
         titulo: 'Show Mano Brown',
         descricao: 'O olhar de Jeff mostra que grandes histórias também nascem na comunidade. Suas fotos carregam simplicidade, estética e a força de quem batalhou para chegar longe.',
         autor: 'Jef Delgado'
