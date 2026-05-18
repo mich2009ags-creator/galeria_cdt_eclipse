@@ -9,7 +9,7 @@ const fotosData = [
     },
     {
         id: 2,
-        filename: 'WhatsApp Image 2026-05-18 at 16.28.22.jpeg',
+        filename: 'IMG-20260518-WA0026.jpg',
         titulo: 'Cidade Noturna',
         descricao: 'Cada traço e cada expressão se tornam parte do seu cotidiano através da sua sensibilidade visual.',
         autor: 'Jef Delgado'
