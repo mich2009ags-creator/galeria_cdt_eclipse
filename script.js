@@ -31,7 +31,7 @@ const fotosData = [
     {
         id: 5,
         filename: 'IMG-20260518-WA0020.jpg',
-        titulo: 'Sucessk',
+        titulo: 'Sucesso',
         descricao: 'Um homem de sucesso que nunca deixou de carregar a essência do menino que começou do zero.',
         autor: 'Jef Delgado'
     },
