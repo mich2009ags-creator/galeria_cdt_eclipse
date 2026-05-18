@@ -1,10 +1,12 @@
 :root {
-    --bg: #0a0a0a;
-    --card: #111111;
-    --destaque: #f5a623;
-    --destaque-glow: rgba(245, 166, 35, 0.3);
-    --texto: #f1f1f1;
-    --texto-claro: #888;
+    --bg-primary: #0a0a0a;        /* Preto absoluto */
+    --bg-secondary: #0d1117;       /* Preto azulado */
+    --bg-card: #161b22;            /* Azul escuro card */
+    --destaque: #1f6feb;           /* Azul claro vibrante */
+    --destaque-hover: #388bfd;     /* Azul mais claro para hover */
+    --texto: #ffffff;              /* Branco */
+    --texto-claro: #8b949e;        /* Cinza azulado */
+    --border: #30363d;             /* Bordas escuras */
 }
 
 * {
@@ -15,7 +17,7 @@
 
 body {
     font-family: 'Segoe UI', 'Roboto', sans-serif;
-    background: var(--bg);
+    background: var(--bg-primary);
     color: var(--texto);
     line-height: 1.6;
 }
@@ -23,7 +25,7 @@ body {
 header {
     text-align: center;
     padding: 3rem 1rem;
-    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    background: linear-gradient(135deg, #0a0a0a, #0d1117);
     border-bottom: 2px solid var(--destaque);
 }
 
@@ -31,7 +33,7 @@ header h1 {
     font-size: 3rem;
     letter-spacing: 4px;
     color: var(--destaque);
-    text-shadow: 0 0 10px var(--destaque-glow);
+    text-shadow: 0 0 15px rgba(31, 111, 235, 0.4);
 }
 
 header p {
@@ -53,16 +55,18 @@ header p {
 
 /* Cards */
 .gallery-item {
-    background: var(--card);
+    background: var(--bg-card);
     border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid var(--border);
 }
 
 .gallery-item:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px var(--destaque-glow);
+    box-shadow: 0 10px 25px rgba(31, 111, 235, 0.3);
+    border-color: var(--destaque);
 }
 
 .gallery-item img {
@@ -103,7 +107,7 @@ header p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.97);
+    background: rgba(0, 0, 0, 0.98);
     z-index: 1000;
     backdrop-filter: blur(8px);
 }
@@ -113,7 +117,7 @@ header p {
     margin: 2rem auto;
     width: 90%;
     max-width: 900px;
-    background: var(--card);
+    background: var(--bg-secondary);
     border-radius: 16px;
     overflow: hidden;
     animation: fadeIn 0.3s ease;
@@ -146,7 +150,7 @@ header p {
 .modal-autor {
     color: var(--destaque);
     font-weight: bold;
-    border-top: 1px solid #333;
+    border-top: 1px solid var(--border);
     padding-top: 0.8rem;
 }
 
@@ -176,7 +180,25 @@ header p {
     }
 }
 
-/* Responsivo para celular */
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--destaque);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--destaque-hover);
+}
+
+/* Responsivo */
 @media (max-width: 768px) {
     .gallery-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
