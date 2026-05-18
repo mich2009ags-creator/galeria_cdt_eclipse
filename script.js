@@ -58,7 +58,7 @@ const fotosData = [
     },
     {
         id: 9,
-        filename: 'WhatsApp Image 2026-05-18 at 15.51.00.jpeg',
+        filename: 'IMG-20260518-WA0015.jpg',
         titulo: 'Deserto ao Anoitecer',
         descricao: 'Da laje para o mundo, Jeff Delgado fotografa a quebrada transformando concreto em memória, identidade e arte.',
         autor: 'Jef Delgado'
