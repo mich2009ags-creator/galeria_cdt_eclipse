@@ -65,8 +65,8 @@ const fotosData = [
     },
     {
         id: 10,
-        filename: 'WhatsApp Image 2026-05-18 at 17.03.43.jpeg',
-        titulo: 'Cachoeira Escondida',
+        filename: 'IMG-20260518-WA0030.jpg',
+        titulo: 'Ice Cube Brasil',
         descricao: 'Ice Cube mostrando a força do rap em sua passagem pelo Brasil. 🎤🔥',
         autor: 'Jef Delgado'
     }
