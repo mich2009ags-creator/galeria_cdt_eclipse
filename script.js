@@ -51,7 +51,7 @@ const fotosData = [
     },
     {
         id: 8,
-        filename: 'WhatsApp Image 2026-05-18 at 15.54.51.jpeg',
+        filename: 'IMG-20260518-WA0016(1).jpg',
         titulo: 'Floresta Mística',
         descricao: 'Mano Brown sentado em um carro clássico, com a quebrada ao fundo e o ônibus "Vale das Virtudes" passando. Uma foto simples, urbana e cheia de atitude.',
         autor: 'Jef Delgado'
