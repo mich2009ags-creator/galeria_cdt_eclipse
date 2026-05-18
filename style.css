@@ -1,0 +1,224 @@
+:root {
+    --bg: #0a0a0a;
+    --card: #111111;
+    --destaque: #f5a623;
+    --destaque-glow: rgba(245, 166, 35, 0.3);
+    --texto: #f1f1f1;
+    --texto-claro: #888;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    background: var(--bg);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    border-bottom: 2px solid var(--destaque);
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    color: var(--destaque);
+    text-shadow: 0 0 10px var(--destaque-glow);
+}
+
+header p {
+    color: var(--texto-claro);
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Cards */
+.gallery-item {
+    background: var(--card);
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px var(--destaque-glow);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay-info {
+    padding: 1rem;
+}
+
+.overlay-info h3 {
+    color: var(--destaque);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.overlay-info .descricao {
+    color: var(--texto-claro);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.overlay-info .autor {
+    color: var(--destaque);
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.97);
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+}
+
+.modal-content {
+    position: relative;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 900px;
+    background: var(--card);
+    border-radius: 16px;
+    overflow: hidden;
+    animation: fadeIn 0.3s ease;
+    border: 1px solid var(--destaque);
+}
+
+.modal-content img {
+    width: 100%;
+    max-height: 65vh;
+    object-fit: contain;
+    background: #000;
+}
+
+.modal-info {
+    padding: 1.5rem;
+}
+
+.modal-info h2 {
+    color: var(--destaque);
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.modal-info p {
+    color: var(--texto-claro);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.modal-autor {
+    color: var(--destaque);
+    font-weight: bold;
+    border-top: 1px solid #333;
+    padding-top: 0.8rem;
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 1001;
+    transition: color 0.3s;
+}
+
+.close-modal:hover {
+    color: var(--destaque);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsivo para celular */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+    
+    .gallery-item img {
+        height: 220px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 0.85rem;
+    }
+    
+    .modal-info h2 {
+        font-size: 1.2rem;
+    }
+    
+    .modal-info p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .gallery-item img {
+        height: 250px;
+    }
+    
+    header {
+        padding: 2rem 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.6rem;
+    }
+}
