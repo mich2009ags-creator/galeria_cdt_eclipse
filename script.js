@@ -44,7 +44,7 @@ const fotosData = [
     },
     {
         id: 7,
-        filename: 'WhatsApp Image 2026-05-18 at 15.57.02.jpeg',
+        filename: 'IMG-20260518-WA0017.jpg',
         titulo: 'Mar Vermelho',
         descricao: 'Cada imagem parece saída de um filme onde a periferia deixa de ser cenário e passa a ser protagonista.',
         autor: 'Jef Delgado'
