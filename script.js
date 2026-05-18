@@ -30,7 +30,7 @@ const fotosData = [
     },
     {
         id: 5,
-        filename: 'WhatsApp Image 2026-05-18 at 16.10.55.jpeg',
+        filename: 'IMG-20260518-WA0020.jpg',
         titulo: 'Arquitetura Moderna',
         descricao: 'Um homem de sucesso que nunca deixou de carregar a essência do menino que começou do zero.',
         autor: 'Jef Delgado'
