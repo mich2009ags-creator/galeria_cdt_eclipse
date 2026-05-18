@@ -3,7 +3,7 @@ const fotosData = [
     {
         id: 1,
         filename: 'WhatsApp Image 2026-05-18 at 16.19.53.jpeg',
-        titulo: 'Nascer do Sol na Praia',
+        titulo: 'Retratos do mundo',
         descricao: 'Entre luzes, ruas e expressões, suas fotos ganham vida própria, unindo estética urbana e a força da beleza negra de forma autêntica.',
         autor: 'Jef Delgado'
     },
@@ -17,49 +17,49 @@ const fotosData = [
     {
         id: 3,
         filename: 'WhatsApp Image 2026-05-18 at 16.17.08.jpeg',
-        titulo: 'Retrato em Preto e Branco',
+        titulo: 'Show Mano Brown',
         descricao: 'O olhar de Jeff mostra que grandes histórias também nascem na comunidade. Suas fotos carregam simplicidade, estética e a força de quem batalhou para chegar longe.',
         autor: 'Jef Delgado'
     },
     {
         id: 4,
-        filename: 'WhatsApp Image 2026-05-18 at 16.15.24.jpeg',
-        titulo: 'Natureza Selvagem',
+        filename: 'IMG-20260518-WA0022.jpg',
+        titulo: 'O início',
         descricao: 'Um menino da quebrada que aprendeu a enxergar beleza onde muitos nunca pararam para olhar.',
         autor: 'Jef Delgado'
     },
     {
         id: 5,
         filename: 'IMG-20260518-WA0020.jpg',
-        titulo: 'Arquitetura Moderna',
+        titulo: 'Sucessk',
         descricao: 'Um homem de sucesso que nunca deixou de carregar a essência do menino que começou do zero.',
         autor: 'Jef Delgado'
     },
     {
         id: 6,
         filename: 'IMG-20260518-WA0018.jpg',
-        titulo: 'Pôr do Sol na Montanha',
+        titulo: 'Mudanças',
         descricao: 'Jeff Delgado transforma cotidiano em narrativa visual. Entre lajes, ruas, música, luzes e rostos, suas fotografias carregam identidade, verdade e visão.',
         autor: 'Jef Delgado'
     },
     {
         id: 7,
         filename: 'IMG-20260518-WA0017.jpg',
-        titulo: 'Mar Vermelho',
+        titulo: 'Os filmes',
         descricao: 'Cada imagem parece saída de um filme onde a periferia deixa de ser cenário e passa a ser protagonista.',
         autor: 'Jef Delgado'
     },
     {
         id: 8,
         filename: 'IMG-20260518-WA0016(1).jpg',
-        titulo: 'Floresta Mística',
+        titulo: 'Cotidiano da quebrada',
         descricao: 'Mano Brown sentado em um carro clássico, com a quebrada ao fundo e o ônibus "Vale das Virtudes" passando. Uma foto simples, urbana e cheia de atitude.',
         autor: 'Jef Delgado'
     },
     {
         id: 9,
         filename: 'IMG-20260518-WA0015.jpg',
-        titulo: 'Deserto ao Anoitecer',
+        titulo: 'Da laje para o mundo',
         descricao: 'Da laje para o mundo, Jeff Delgado fotografa a quebrada transformando concreto em memória, identidade e arte.',
         autor: 'Jef Delgado'
     },
