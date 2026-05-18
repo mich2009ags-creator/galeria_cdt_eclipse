@@ -37,7 +37,7 @@ const fotosData = [
     },
     {
         id: 6,
-        filename: 'WhatsApp Image 2026-05-18 at 16.00.20.jpeg',
+        filename: 'IMG-20260518-WA0018.jpg',
         titulo: 'Pôr do Sol na Montanha',
         descricao: 'Jeff Delgado transforma cotidiano em narrativa visual. Entre lajes, ruas, música, luzes e rostos, suas fotografias carregam identidade, verdade e visão.',
         autor: 'Jef Delgado'
