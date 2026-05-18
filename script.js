@@ -2,7 +2,7 @@
 const fotosData = [
     {
         id: 1,
-        filename: 'WhatsApp Image 2026-05-18 at 16.19.53.jpeg',
+        filename: 'IMG-20260518-WA0024.jpg',
         titulo: 'Retratos do mundo',
         descricao: 'Entre luzes, ruas e expressões, suas fotos ganham vida própria, unindo estética urbana e a força da beleza negra de forma autêntica.',
         autor: 'Jef Delgado'
